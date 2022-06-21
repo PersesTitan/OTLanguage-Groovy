@@ -18,9 +18,9 @@ class Main {
         System.out.println("================출력================")
         try (BufferedReader reader = new BufferedReader(new FileReader(path, StandardCharsets.UTF_8))) {
             while ((text = reader.readLine()) != null) {
-                idLine.put(count, text)
-                total.append(text)
-                start(text)
+                idLine.put count, text
+                total.append text
+                start text
                 count++
             }
         }
