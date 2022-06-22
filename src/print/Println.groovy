@@ -1,0 +1,4 @@
+package print
+
+class Println {
+}
