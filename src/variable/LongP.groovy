@@ -3,6 +3,7 @@ package variable
 import item.Check
 import item.KeyValueItem
 import item.Setting
+import item.kind.VarType
 import item.work.VariableWork
 
 import java.util.regex.Pattern
