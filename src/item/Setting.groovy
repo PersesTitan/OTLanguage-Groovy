@@ -1,6 +1,6 @@
 package item
 
-class Setting {
+class Setting implements ActivityItem {
     public final static StringBuffer total = new StringBuffer()
     public final static Stack<Integer> stack = new Stack<>()
     public final static Map<String, String> uuidMap = new HashMap<>()
@@ -18,7 +18,7 @@ class Setting {
     public final static Map<String, String> IFM = new HashMap<>()
     public final static Map<String, String> FORM = new HashMap<>()
 
-    KeyValueItem setKeyValue(String SPECIFIED, String line) throws Exception {
+    static KeyValueItem setKeyValue(String SPECIFIED, String line) throws Exception {
         int start = line.indexOf(SPECIFIED) + SPECIFIED.length()
         if (line.substring(start).isBlank()) throw new Exception("초기값이 존재 하지 않습니다.")
         int end = line.indexOf(":")
